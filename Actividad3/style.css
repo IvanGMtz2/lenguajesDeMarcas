@@ -1,0 +1,31 @@
+/* ROOT + VARIABLES */
+:root{
+    --color-primario: blue;
+    --bg-color:#ddd;
+}
+
+
+/* SELECTO UNIVERSAL */
+*{
+    color: blueviolet;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* SELECTORES */
+table, th, td {  
+    border: 1px solid var(--color-primario); 
+}
+
+#inicio{ /*ids*/
+    
+}
+
+.card{ /*clases*/
+    background-color: var(--bg-color);
+}
+
+p{
+    color: red;
+}
