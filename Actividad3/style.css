@@ -18,14 +18,77 @@ table, th, td {
     border: 1px solid var(--color-primario); 
 }
 
-#inicio{ /*ids*/
-    
+p{
+    color: red;
+}
+
+#inicio p{ /*ids*/
+    color: initial; /* Valores iniciales de CSS */
+    text-align: unset; /* Solo hereda el valor si la propiedad la herencia directa, sino se mantiene los valores iniciales */
+    font-size: inherit; /* Se hereda del elemento padre el valor de la propiedad  */
 }
 
 .card{ /*clases*/
     background-color: var(--bg-color);
 }
 
-p{
+header a{   /* Todos los hijos de la 1a etiqueta adquieren los estilos */
+    text-decoration: none;
+    color: var(--color-primario);
+}
+
+footer > a{ /* solo los hijos directos adquieron los estilos */
+    text-decoration: none;
+    color: greenyellow;
+}
+
+/*
+h1 + nav {
+  background-color: blue;
+}
+*/
+
+a:hover{
     color: red;
+    text-decoration: overline;
+}
+
+/* Pseudo-clases (:)
+hover - al pasar por encima el raton
+visited - al visitar
+active - al dar click
+nth-child() - hijo a decidir (even impar, odd par)
+
+Pseudo-elementos(::)
+first-letter - primera letra
+first-line - primera linea
+before
+after
+
+*/
+
+p::first-letter{
+    font-size: 20px;
+    color: chocolate;
+}
+
+li:nth-child(even){
+    background-color: aqua;
+}
+
+input{
+    width: 100%;
+}
+
+input[type="submit"]{
+    background-color: var(--color-primario);
+    color: white;
+    font-size: 20px;
+
+}
+
+input[type="submit"]:hover{
+    background-color: red;
+    color: white;
+    font-size: 20px;
 }
