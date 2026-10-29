@@ -1,0 +1,16 @@
+.sectionUno > p{
+    color: aqua;
+}
+
+.sectionDos > p{
+    color: red;
+}
+
+p{
+    color: green;
+}
+
+/*
+    Al tener un selector descendente independiente por cada clase para los parrafos, no se sobreponen los estilos
+    entonces al tomar el selector p, cada uno mantiene su estilo
+*/

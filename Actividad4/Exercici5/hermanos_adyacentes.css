@@ -1,0 +1,10 @@
+h1 + p{
+    color: green;
+}
+
+/*
+    4. Prova d'afegir un <h2> entre l'<h1> i el primer paràgraf: què passa amb el color?
+    Quan ho hagis comprovat, desfés el canvi.
+    5. Al final del .css, escriu un comentari que expliqui què vol dir «adjacent» i per què
+    el segon paràgraf no queda afectat.
+*/

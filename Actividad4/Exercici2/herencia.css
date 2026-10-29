@@ -1,0 +1,7 @@
+div{
+    color: red;
+}
+
+/*
+    Los parrafos(<p>) heredan los atributos del div porque es un elemento hijo y el de afuera no por eso no adquiere el estilo
+*/

@@ -1,0 +1,14 @@
+#parrafo{ /* Ids parrafo */
+    color: brown;
+    text-decoration: solid;
+}
+
+.parrafo{ /* Clase parrafo */
+    color: blueviolet;
+    font-size: 20px;
+}
+
+p{
+    color: aqua;
+    font-weight: bolder;
+}
