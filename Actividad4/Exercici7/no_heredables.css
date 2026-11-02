@@ -1,0 +1,15 @@
+*{
+    background-color: white;
+}
+
+div{
+    background-color: yellow;
+    padding: 20px;
+    color: red;
+}
+
+/*
+    Color, SI se hereda: El texto del <p> sale rojo, porque lo hereda.
+    Fondo, NO se hereda: El fondo del <p> es blanco y no amarillo: el amarillo solo se ve alrededor, en el padding del <div>.
+    Padding, NO se hereda: El <p> no tiene padding propio: su texto toca el borde del fondo blanco.
+*/

@@ -1,0 +1,22 @@
+
+p{
+    color: red;
+}
+
+p{
+    color: blue;
+}
+
+.parrafo{
+    color: green;
+}
+
+/*
+    Paso 3: Se ve el color de la segunda regla.
+    Paso 4: Al cambiar el orden, se ve el otro color. Cuando la especificidad es igual, gana la última regla.
+    Paso 5: Se ve el verde, aunque la regla de clase va antes.
+
+    El color que se mantiene es el final, como el nombre del ejercicio menciona los estilos van en cascada
+    uno debajo de otro, al tener un mismo estilo para <p> entonces toma el que este al final, si ya solo 
+    vamos por la clase entonces toma esta directamente.
+*/

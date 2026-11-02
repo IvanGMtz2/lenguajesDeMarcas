@@ -1,0 +1,41 @@
+div{
+    color: purple;
+    font-size: 24px;
+}
+
+h2, p, ul {
+    color: inherit;
+}
+
+p {
+    font-size: initial;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 60px;
+}
+
+ul.reset {
+    list-style-type: unset;
+    padding-left: unset;
+}
+
+
+/*
+    Paso 4 (inherit): El <h2>, el <p> y la <ul> salen morados.
+    Paso 5 (initial): El párrafo queda en unos 16px, que es el tamaño por defecto. 
+    Es más pequeño que el <div> (24px) y que el <h2> (unos 36px, porque el <h2> mide 1.5 veces el tamaño de su padre).
+    Paso 6 (unset): list-style-type: deja de ser cuadrado y vuelve al círculo (disc).
+    padding-left: pasa a 0. La lista queda pegada a la izquierda y las viñetas pueden salirse o no verse.
+
+    padding-left: Ha reaccionado actuando como «initial». 
+    Dado que el padding NO es una propiedad heredada de los elementos padres, 
+    «unset» lo ha restablecido al valor por defecto del navegador para cualquier elemento (que es 0 px). 
+    Por eso la lista ha perdido por completo su sangría de 60 px y se ha pegado al borde izquierdo de la pantalla.
+
+    list-style-type: ha reaccionado comportándose como «inherit». 
+    Dado que el estilo de lista SÍ es una propiedad que se hereda, 
+    al establecerla en «unset» ha hecho que se tenga en cuenta la configuración del elemento padre.
+
+*/
