@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Práctica: Todas las Etiquetas</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">   
+</head>
+<body>
+
+    <!-- 1. ESTRUCTURA: CABECERA -->
+    <header id="inicio">
+        <!-- TEXTO: Título principal -->
+        <h1>Plataforma de Aprendizaje Web</h1>
+        <p>Aprende código de manera estructurada y semántica.</p>
+    </header>
+
+    <!-- 2. ENLACES Y LISTAS: MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#contenido">Contenido Técnico</a></li>
+            <li><a href="#registro">Formulario</a></li>
+            <li><a href="https://mozilla.org" target="_blank">MDN Web Docs</a></li>
+        </ul>
+    </nav>
+
+    <!-- 3. ESTRUCTURA: CONTENIDO PRINCIPAL -->
+    <main id="contenido">
+
+        <!-- ESTRUCTURA: SECCIÓN TEMÁTICA -->
+        <section>
+            
+            <!-- ESTRUCTURA Y TEXTO: ARTÍCULO 1 -->
+            <article>
+                <h2>Lección 1: Formatos de Texto e Imágenes</h2>
+                <p>El texto en la web puede llevar <strong>énfasis importante (negrita)</strong> o un <em>énfasis de lectura (cursiva)</em> según lo requiera el contenido.</p>
+                
+                <br> <!-- Salto de línea -->
+                
+                <!-- MULTIMEDIA: Imagen con ruta y texto alternativo -->
+                <img src="https://picsum.photos" alt="Imagen de ejemplo con paisajes aleatorios">
+                
+                <hr> <!-- Línea divisoria -->
+            </article>
+
+            <!-- ESTRUCTURA Y TEXTO: ARTÍCULO 2 -->
+            <article>
+                <h2>Lección 2: Listas y Multimedia Nativa</h2>
+                <p>Para dominar el desarrollo frontend necesitas aprender tres tecnologías:</p>
+                
+                <!-- ENLACES Y LISTAS: Lista ordenada -->
+                <ol>
+                    <li>HTML (Estructura)</li>
+                    <li>CSS (Diseño)</li>
+                    <li>JavaScript (Interactividad)</li>
+                </ol>
+
+                <h3>Demostración de Video</h3>
+                <!-- MULTIMEDIA: Video nativo con controles -->
+                <video src="https://w3schools.com" controls width="320">
+                    Tu navegador no soporta la reproducción de video.
+                </video>
+
+                <h3>Demostración de Audio</h3>
+                <!-- MULTIMEDIA: Audio nativo con controles -->
+                <audio src="https://w3schools.com" controls>
+                    Tu navegador no soporta la reproducción de audio.
+                </audio>
+
+                <h3>Contenido Externo (Iframe)</h3>
+                <!-- MULTIMEDIA: Iframe incrustando una página segura -->
+                <iframe src="https://example.com" width="100%" height="150" title="Página de ejemplo externa"></iframe>
+            </article>
+
+            <!-- TABLAS: Datos estructurados -->
+            <article>
+                <h2>Tabla de Precios de Cursos</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tecnología</th>
+                            <th>Nivel</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML5 Semántico</td>
+                            <td>Principiante</td>
+                            <td>Gratis</td>
+                        </tr>
+                        <tr>
+                            <td>CSS Grid y Flexbox</td>
+                            <td>Intermedio</td>
+                            <td>$15 USD</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+        </section>
+        
+        <!-- ESTRUCTURA: BARRA LATERAL -->
+        <aside>
+            <div class="caja-autor">
+                <h3>Sobre el Tutor</h3>
+                <p>Contenido diseñado para estudiantes de desarrollo web que buscan un código limpio y legible.</p>
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- FORMULARIOS: Captura de datos del usuario -->
+    <section id="registro">
+        <h2>Crea tu Cuenta Obligatoria</h2>
+        <form action="/procesar-registro" method="POST">
+            
+            <p>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
+            </p>
+
+            <p>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" placeholder="correo@ejemplo.com" required>
+            </p>
+
+            <p>
+                <label for="interes">Interés principal:</label>
+                <select id="interes">
+                    <option value="html">HTML Semántico</option>
+                    <option value="css">Diseño con CSS</option>
+                    <option value="js">Programación JS</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="comentarios">Cuéntanos tu meta:</label>
+                <textarea id="comentarios" placeholder="Escribe tus objetivos aquí..." rows="4"></textarea>
+            </p>
+
+            <button type="submit">Enviar Registro</button>
+        </form>
+    </section>
+
+    <!-- ESTRUCTURA: PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 Plataforma de Aprendizaje. Todos los derechos reservados.</p>
+        <p><a href="#inicio">Volver arriba</a></p>
+    </footer>
+
+</body>
+</html>
