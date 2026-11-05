@@ -1,0 +1,17 @@
+img{
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
+}
+
+*{
+    text-align: center;
+}
+
+/*
+
+    Las imagenes por defecto tiene unas medidas y tambien una proporcion o relacion de aspecto
+    dada por su anchura y altura, al nosotros establecer una anchura y de manera automatica el alto
+    entonces esto se ajusta en base a su relacion de aspecto para no deformarse sino verse como su version original.
+
+*/

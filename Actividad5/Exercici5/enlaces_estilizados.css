@@ -1,0 +1,12 @@
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+}
+
+/*
+    Por defecto el color es azul, en caso de tener el mouse encima(hover) rojo, 
+    esto es para indicar que es un enlace y que se puede hacer click en el.
+*/
