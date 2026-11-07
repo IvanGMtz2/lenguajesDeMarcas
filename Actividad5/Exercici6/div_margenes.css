@@ -1,0 +1,10 @@
+div{
+    margin: 20px;
+    padding: 15px;
+    background-color: lightgray;
+}
+
+/*
+    El margen es el espacio de fuera del div, lo separa de los demas elementos y no tiene el fondo gris.
+    El padding es el espacio de dentro, entre el borde y el contenido, por eso este si queda dentro del fondo gris.
+*/

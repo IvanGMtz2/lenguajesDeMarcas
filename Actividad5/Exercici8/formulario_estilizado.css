@@ -1,0 +1,10 @@
+input{
+    width: 100%;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+/*
+    El boton no se ve afectado porque es una etiqueta <button> y no un <input>,
+    el selector input solo aplica a las etiquetas <input>.
+*/

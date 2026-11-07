@@ -1,0 +1,19 @@
+a{
+    color: blue;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a{
+    color: white;
+}
+
+/*
+    Para el enlace del pie use footer a, que coge solo los enlaces que estan dentro del footer.
+    Gana a la regla general a porque es mas especifico (tiene dos etiquetas en vez de una).
+*/

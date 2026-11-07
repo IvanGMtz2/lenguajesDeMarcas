@@ -1,0 +1,10 @@
+h1{
+    color: green;
+    text-align: center;
+    font-size: 24px;
+}
+
+/*
+    text-align: center centra el contenido (el texto) dentro de la caja del h1, no la caja en si.
+    El h1 ocupa todo el ancho de la pagina y el texto se coloca en el medio de ese ancho.
+*/
