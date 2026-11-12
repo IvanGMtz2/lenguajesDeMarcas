@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cursos de la escuela</title>
+    <link rel="icon" type="image/png" href="../imagenes/logo.png">
+</head>
+
+<body>
+    <!-- Pagina Completo, Ejercicio 4 -->
+    <!-- Nombre: Ivan Garces | Curso: DAW1 -->
+
+    <header>
+        <h1>Título principal de la página</h1>
+        <nav>
+            <a href="#temario">Temario</a>
+            <a href="#video">Vídeo</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="temario">
+            <h2>Temario</h2>
+
+            <details>
+                <summary>¿Pregunta siempre visible sobre el temario?</summary>
+                <p>Respuesta desplegable con el texto explicativo del curso.</p>
+            </details>
+
+            <p>Lorem ipsum dolor sit amet, <q>cita corta en mitad de la frase</q>, consectetur adipiscing elit.</p>
+        </section>
+
+        <section id="video">
+            <h2>Vídeo de presentación</h2>
+            <video width="600" controls poster="../imagenes/poster.jpg" preload="metadata">
+                <source src="../multimedia/visita.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de vídeos HTML5.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Correo: <a href="mailto:info@escuela.com">info@escuela.com</a><br>
+            Teléfono: <a href="tel:+34973123456">+34 973 123 456</a>
+        </address>
+
+        <p>&copy; 2026 Escuela de Música. Todos los derechos reservados.</p>
+        <p><a href="../docs/manual.pdf" download title="Descargar manual del alumno en formato PDF">Descargar manual</a>
+        </p>
+    </footer>
+
+
+    <!-- Tabla, Ejercicio 2 -->
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">
+                    Modulo
+                </th>
+                <th rowspan="2">
+                    Profesor
+                </th>
+                <th colspan="2">
+                    Horario
+                </th>
+            </tr>
+            <tr>
+                <th>Dia</th>
+                <th>Hora</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Lenguajes de Marcas</td>
+                <td rowspan="2">Ivan</td>
+                <td>Miercoles</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Jueves</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Programacion</td>
+                <td>Flor</td>
+                <td>Jueves</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total horas semanales</td>
+                <td>4</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Formulario, Ejercicio 3 -->
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Datos del alumno</legend>
+
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+            </div>
+
+            <div>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[67][0-9]{8}" required>
+            </div>
+
+            <div>
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso" required>
+                    <option value="" selected>Elige un curso</option>
+                    <option value="guitarra">Guitarra</option>
+                    <option value="piano">Piano</option>
+                    <option value="bateria" disabled>Batería (completo)</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <div>
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Acepto los términos y condiciones</label>
+        </div>
+
+        <div>
+            <button type="submit">Inscribirse</button>
+            <button type="reset">Borrar</button>
+        </div>
+    </form>
+</body>
+
+</html>
