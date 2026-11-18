@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoría de CSS</title>
+</head>
+<body>
+    
+    <h1>BOX MODEL</h1>
+
+    <p>El modelo de caja en CSS define el espacio que ocupa un elemento, incluyendo su contenido, relleno, borde y margen.</p>
+
+    <ul>
+        <li><strong>Contenido:</strong> Es el área donde se muestra el contenido del elemento, como texto o imágenes.</li>
+        <li><strong>Relleno (Padding):</strong> Es el espacio entre el contenido y el borde del elemento. Se puede ajustar con la propiedad <code>padding</code>.</li>
+        <li><strong>Borde (Border):</strong> Es la línea que rodea el relleno y el contenido. Se puede personalizar con la propiedad <code>border</code>.</li>
+        <li><strong>Margen (Margin):</strong> Es el espacio exterior que separa el elemento de otros elementos. Se puede ajustar con la propiedad <code>margin</code>.</li>
+    </ul>
+
+    <h2>Ejemplo de Box Model</h2>
+
+    <div style="width: 200px; padding: 20px; border: 5px solid black; margin: 10px;">
+        Contenido del elemento
+    </div>
+
+    <h2> Unidades de Medida</h2>
+    <p>En CSS, existen varias unidades de medida que se pueden utilizar para definir las dimensiones de los elementos:</p>
+    <ul>
+        <li><strong>px (píxeles):</strong> Es la unidad más común y se basa en la resolución de la pantalla.</li>
+        <li><strong>% (porcentaje):</strong> Se utiliza para definir dimensiones relativas a otro elemento o al contenedor padre.</li>
+        <li><strong>em:</strong> Es una unidad relativa al tamaño de fuente del elemento.</li>
+        <li><strong>rem:</strong> Es una unidad relativa al tamaño de fuente del elemento raíz (html).</li>
+        <li><strong>vw:</strong> Es una unidad relativa al ancho de la ventana gráfica.</li>
+        <li><strong>vh:</strong> Es una unidad relativa al alto de la ventana gráfica.</li>
+    </ul>
+
+    <h2>Propiedades de CSS</h2>
+    <p>Algunas propiedades comunes de CSS incluyen:</p>
+    <ul>
+        <li><strong>color:</strong> Define el color del texto.</li>
+        <li><strong>background-color:</strong> Define el color de fondo de un elemento.</li>
+        <li><strong>font-size:</strong> Define el tamaño de la fuente del texto.</li>
+        <li><strong>margin:</strong> Define el espacio exterior alrededor de un elemento.</li>
+        <li><strong>padding:</strong> Define el espacio interior entre el contenido y el borde de un elemento.</li>
+        <li><strong>border:</strong> Define el estilo, ancho y color del borde de un elemento.</li>
+    </ul>
+
+    <p> Display: block, inline, inline-block, flex, grid, none </p>
+
+    <p> <strong>display: block;</strong> Los elementos de bloque ocupan todo el ancho disponible y comienzan en una nueva línea. Ejemplos: <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>.</p>
+    <p> <strong>display: inline;</strong> Los elementos en línea no comienzan en una nueva línea y solo ocupan el espacio necesario. Ejemplos: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>.</p>
+    <p> <strong>display: inline-block;</strong> Los elementos en línea-bloque se comportan como elementos en línea, pero pueden tener un ancho y alto definidos. Ejemplos: <code>&lt;img&gt;</code>, <code>&lt;button&gt;</code>.</p>
+    <p> <strong>display: flex;</strong> Los elementos flexibles se comportan como elementos en línea, pero pueden tener un ancho y alto definidos. Ejemplos: <code>&lt;div&gt;</code>, <code>&lt;section&gt;</code>.</p>
+    <p> <strong>display: grid;</strong> Los elementos de cuadrícula se comportan como elementos en línea, pero pueden tener un ancho y alto definidos. Ejemplos: <code>&lt;div&gt;</code>, <code>&lt;section&gt;</code>.</p>
+    <p> <strong>display: none;</strong> Los elementos no se muestran en la página. Ejemplos: <code>&lt;div&gt;</code>, <code>&lt;section&gt;</code>.</p>
+
+    <h3>Propiedades de CSS</h3>
+    <p>Algunas propiedades comunes de CSS incluyen: overflow, box-sizing, float, flexbox</p>
+    <ul>
+        <li><strong>overflow:</strong> Controla cómo se muestra el contenido que desborda el área de un elemento. Valores comunes: <code>visible</code>, <code>hidden</code>, <code>scroll</code>, <code>auto</code>.</li>
+        <li><strong>box-sizing:</strong> Define cómo se calculan las dimensiones de un elemento. Valores comunes: <code>content-box</code>, <code>border-box</code>.</li>
+        <li><strong>float:</strong> Permite que un elemento se desplace hacia la izquierda o derecha dentro de su contenedor. Valores comunes: <code>left</code>, <code>right</code>, <code>none</code>.</li>
+        <li><strong>flexbox:</strong> Permite crear diseños flexibles y responsivos. Valores comunes: <code>display: flex</code>, <code>flex-direction</code>, <code>flex-wrap</code>.</li>
+    </ul>
+
+    <h1> FLEXBOX </h1>
+    <p>El modelo flexbox permite crear diseños flexibles y responsivos de manera sencilla y eficiente.</p>
+    <p>Para activar el modelo flexbox, se debe establecer la propiedad <code>display: flex</code> en el contenedor padre.</p>
+    <!-- flex-shrink, flex-grow, flex-basis -->
+    <p>Algunas propiedades importantes de flexbox incluyen:</p>
+    <ul>
+        <li><strong>flex-direction:</strong> Define la dirección de los elementos flexibles dentro del contenedor. Valores: <code>row</code>, <code>row-reverse</code>, <code>column</code>, <code>column-reverse</code>.</li>
+        <li><strong>justify-content:</strong> Alinea los elementos flexibles a lo largo del eje principal. Valores: <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>space-between</code>, <code>space-around</code>.</li>
+        <li><strong>align-items:</strong> Alinea los elementos flexibles a lo largo del eje transversal. Valores: <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>baseline</code>, <code>stretch</code>.</li>
+        <li><strong>flex-wrap:</strong> Controla si los elementos flexibles deben ajustarse a una nueva línea cuando no caben en el contenedor. Valores: <code>nowrap</code>, <code>wrap</code>, <code>wrap-reverse</code>.</li>
+        <li><strong>align-content:</strong> Alinea las líneas flexibles a lo largo del eje transversal. Valores: <code>flex-start</code>, <code>flex-end</code>, < code>center</ code>, < code>space-between</ code>, < code>space-around</ code>, < code>stretch</ code>.</li>
+        <li><strong>gap:</strong> Define el espacio entre los elementos flexibles. Valores: < code>normal</ code>, < code>width</ code>, < code>height</ code>.</li>
+    </ul>
+
+</body>
+</html>
