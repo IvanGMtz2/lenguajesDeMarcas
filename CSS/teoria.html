@@ -46,8 +46,6 @@
         <li><strong>border:</strong> Define el estilo, ancho y color del borde de un elemento.</li>
     </ul>
 
-    <p> Display: block, inline, inline-block, flex, grid, none </p>
-
     <p> <strong>display: block;</strong> Los elementos de bloque ocupan todo el ancho disponible y comienzan en una nueva línea. Ejemplos: <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>.</p>
     <p> <strong>display: inline;</strong> Los elementos en línea no comienzan en una nueva línea y solo ocupan el espacio necesario. Ejemplos: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>.</p>
     <p> <strong>display: inline-block;</strong> Los elementos en línea-bloque se comportan como elementos en línea, pero pueden tener un ancho y alto definidos. Ejemplos: <code>&lt;img&gt;</code>, <code>&lt;button&gt;</code>.</p>
@@ -67,16 +65,41 @@
     <h1> FLEXBOX </h1>
     <p>El modelo flexbox permite crear diseños flexibles y responsivos de manera sencilla y eficiente.</p>
     <p>Para activar el modelo flexbox, se debe establecer la propiedad <code>display: flex</code> en el contenedor padre.</p>
-    <!-- flex-shrink, flex-grow, flex-basis -->
+
     <p>Algunas propiedades importantes de flexbox incluyen:</p>
     <ul>
         <li><strong>flex-direction:</strong> Define la dirección de los elementos flexibles dentro del contenedor. Valores: <code>row</code>, <code>row-reverse</code>, <code>column</code>, <code>column-reverse</code>.</li>
         <li><strong>justify-content:</strong> Alinea los elementos flexibles a lo largo del eje principal. Valores: <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>space-between</code>, <code>space-around</code>.</li>
         <li><strong>align-items:</strong> Alinea los elementos flexibles a lo largo del eje transversal. Valores: <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>baseline</code>, <code>stretch</code>.</li>
         <li><strong>flex-wrap:</strong> Controla si los elementos flexibles deben ajustarse a una nueva línea cuando no caben en el contenedor. Valores: <code>nowrap</code>, <code>wrap</code>, <code>wrap-reverse</code>.</li>
-        <li><strong>align-content:</strong> Alinea las líneas flexibles a lo largo del eje transversal. Valores: <code>flex-start</code>, <code>flex-end</code>, < code>center</ code>, < code>space-between</ code>, < code>space-around</ code>, < code>stretch</ code>.</li>
-        <li><strong>gap:</strong> Define el espacio entre los elementos flexibles. Valores: < code>normal</ code>, < code>width</ code>, < code>height</ code>.</li>
+        <li><strong>align-content:</strong> Alinea las líneas flexibles a lo largo del eje transversal. Valores: <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>space-between</code>, <code>space-around</code>, <code>stretch</code>.</li>
+        <li><strong>gap:</strong> Define el espacio entre los elementos flexibles. Valores: <code>normal</code>, <code>width</code>, <code>height</code>.</li>
     </ul>
 
+    <!-- Media querys -->
+
+    <h1> MEDIA QUERYS </h1>
+    <p>Las media queries permiten aplicar estilos CSS específicos según las características del dispositivo o la ventana del navegador, como el ancho, la altura, la orientación o la resolución de pantalla.</p>
+
+    <p>Para utilizar media queries, se emplea la regla <code>@media</code> seguida de una condición y un bloque de estilos CSS que se aplicarán cuando se cumpla dicha condición.</p>
+
+    <p>Algunos ejemplos de media queries comunes incluyen:</p>
+    <ul>
+        <li><strong>@media (max-width: 600px):</strong> Aplica estilos cuando el ancho de la ventana es igual o menor a 600 píxeles.</li>
+        <li><strong>@media (min-width: 601px) and (max-width: 1024px):</strong> Aplica estilos cuando el ancho de la ventana está entre 601 y 1024 píxeles.</li>
+        <li><strong>@media (orientation: landscape):</strong> Aplica estilos cuando la orientación del dispositivo es horizontal.</li>
+        <li><strong>@media (orientation: portrait):</strong> Aplica estilos cuando la orientación del dispositivo es vertical.</li>
+    </ul>
+
+    <p>Ejemplo de media query:</p>
+    <pre>
+        <code>
+            @media (max-width: 600px) {
+                body {
+                    background-color: lightblue;
+                }
+            }
+        </code> 
+    </pre>    
 </body>
 </html>
